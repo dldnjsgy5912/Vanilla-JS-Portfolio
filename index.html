@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--파비콘-->
+    <link rel="icon" href="./favicon1.png" />
+
+    <!--브라우저 스타일 초기화-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@400;700;900&display=swap" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!--Google Material Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <!-- emailjs -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+
+    <!--fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+    <!--Lodash-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
+      integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww=="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- GSAP -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
+      integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- ScrollToPlugin -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
+      integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- TweenMax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <!-- ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!--ScrollMagic-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+      integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- script,css -->
+    <link rel="stylesheet" href="/css/Animation.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/common.css" />
+    <script defer src="./js/main.js"></script>
+    <title>WonHyo LEE</title>
+  </head>
+
+  <body>
+    <!-- header -->
+    <header>
+      <!-- <h1 class="main-title"><a href="javascript:void(0)">WonHyo LEE</a></h1> -->
+      <img src="./imges/title.png" alt="타이틀 로고" class="title" />
+
+      <ul class="main-menu">
+        <li>
+          <a href="javascript:void(0)" id="home">Home</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)" id="about">About</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)" id="project">Project</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)" id="Animation">Animation</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)" id="contact">Contact</a>
+        </li>
+      </ul>
+
+      <ul class="main-icon">
+        <li>
+          <a href="https://www.facebook.com/profile.php?id=100003526337829" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/0nehy0/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/dldnjsgy5912" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <span class="pageYOffset"></span>
+
+    <section id="front-page" class="front-mian">
+      <div class="text_box">
+        <span class="text"> </span>
+        <span class="blink">|</span>
+      </div>
+    </section>
+
+    <!-- editorial -->
+    <div class="editorial">
+      <p class="w900">CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS</p>
+      <p class="w900">
+        Javascript Javascript Javascript Javascript Javascript Javascript Javascript Javascript Javascript Javascript Javascript Javascript Javascript Javascript Javascript Javascript
+      </p>
+    </div>
+
+    <!-- Swiper -->
+    <section class="swiperEvent scroll-spy">
+      <h2 class="swiper-title back-to-position to-right delay-1">Swiper animation</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./imges/iloveimg-converted/토토르-0000.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./imges/iloveimg-converted/토토르-0001.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./imges/iloveimg-converted/토토르-0002.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./imges/iloveimg-converted/토토르-0003.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./imges/iloveimg-converted/토토르-0004.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./imges/iloveimg-converted/토토르-0005.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./imges/iloveimg-converted/토토르-0006.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./imges/iloveimg-converted/토토르-0007.jpg" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section id="about-page" class="about scroll-spy">
+      <div class="text back-to-position to-right delay-0">
+        <div class="front">Hello!</div>
+        <div class="back">안녕하세요</div>
+      </div>
+      <div class="text back-to-position to-right delay-1">
+        <div class="front">I'm WonHyo LEE,</div>
+        <div class="back">저는 이원효입니다,</div>
+      </div>
+      <div class="text back-to-position to-right delay-2">
+        <div class="front">Thank you for visiting my portfolio site.</div>
+        <div class="back">제 포트폴리오 사이트를 방문해 주셔서 감사합니다.</div>
+      </div>
+
+      <!-- profile -->
+      <div class="profile back-to-position to-left delay-3">
+        <div class="medal">
+          <img src="./imges/이원효1 (1).jpg" alt="wonhyo" class="front profile-img" />
+          <span class="back profile-text"
+            >항상 배우고자 노력하는 이원효입니다! <br />
+            웹페이지 제작이 너무 즐거운것을 알고 HTML/CSS부터 자바스크립트, 더 나아가서 React까지 흥미롭게 공부하고 있습니다. 배우는 것에 번아웃이 오지 않는 열심히 하는 사원이 되겠습니다.
+            감사합니다!</span
+          >
+        </div>
+        <ul class="skill">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JS</li>
+          <li>React</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Project -->
+    <section id="project-page" class="project">
+      <section class="starbucks scroll-spy">
+        <img src="./imges/starbucks_title.png" alt="스타벅스 타이틀" class="starbucks-title title back-to-position to-left delay-0" />
+        <img src="./imges/pot11.png" alt="스타벅스 메인" class="starbucks-main main back-to-position to-left delay-1" />
+
+        <div class="textarea back-to-position to-right delay-2">
+          <h2>STARBUCKS 예제 사이트</h2>
+          <p>
+            세계적인 기업인 스타벅스의 페이지를 보고 어느 사이트보다<br />
+            체계적인 웹 표준성과 기술을 습득할수 있다고 생각해서 제작하게 되었습니다.
+          </p>
+          <a href="https://upbeat-kirch-3e90f2.netlify.app" target="_blank">사이트 보기</a>
+        </div>
+      </section>
+    </section>
+
+    <section class="test scroll-spy">
+      <img src="./imges/img-banner.png" alt="프로젝트 타이틀" class="test-title title back-to-position to-right delay-0" />
+      <img src="./imges/pot 2.png" alt="프로젝트 메인" class="test-main main back-to-position to-right delay-1" />
+      <div class="textarea text back-to-position to-left delay-2">
+        <h2>test 예제 사이트</h2>
+        <p>
+          웹공부를 할 당시 만들어본 프로젝트입니다.<br />
+          기초를 다져보려고 노력하였습니다.
+        </p>
+        <a href="https://lucid-leavitt-5d6cdb.netlify.app/" target="_blank">사이트 보기</a>
+      </div>
+    </section>
+
+    <!-- horizontal -->
+
+    <section id="animation-page ">
+      <div id="container">
+        <div class="module GSAP">
+          <div class="moduletext">
+            <h2>GSAP Animation</h2>
+            <p>접근성을 고려하여 초점이동을 준수한 웹 표준 탭 메뉴를 완성하였습니다.</p>
+          </div>
+          <svg id="mainSvg" viewBox="0 0 800 600">
+            <defs>
+              <g id="allBoxes">
+                <rect x="62.92" y="231.96" width="100" height="100" />
+                <rect x="185.14" y="231.96" width="100" height="100" rx="50" />
+                <rect x="305.14" y="231.96" width="100" height="100" />
+                <rect x="425.14" y="231.96" width="100" height="100" rx="50" />
+                <rect x="545.14" y="231.96" width="100" height="100" />
+                <rect x="665.14" y="231.96" width="100" height="100" rx="50" />
+                <rect x="785.14" y="231.96" width="100" height="100" />
+              </g>
+            </defs>
+
+            <use xlink:href="#allBoxes" />
+            <use id="ref" xlink:href="#allBoxes" x="-0" y="100" opacity="0.1" />
+          </svg>
+        </div>
+
+        <div class="module cubes">
+          <div class="moduletext">
+            <h2>cube Animation</h2>
+            <p>
+              toggleClass()를 이용하여 클래스를 추가한 뒤 hasClass()로<br />
+              클래스 여부를 확인하여 사이드 메뉴를 제작하였습니다.<br />
+              글씨의 변경은 text() 메서드를 이용했습니다.
+            </p>
+          </div>
+          <div class="cube">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+
+        <div class="module loadings">
+          <div class="moduletext">
+            <h2>loading Animation</h2>
+            <p>
+              toggleClass()를 이용하여 클래스를 추가한 뒤 hasClass()로<br />
+              클래스 여부를 확인하여 사이드 메뉴를 제작하였습니다.<br />
+              글씨의 변경은 text() 메서드를 이용했습니다.
+            </p>
+          </div>
+          <div class="loading">
+            <span class="circle1"></span>
+            <span class="circle2"></span>
+          </div>
+        </div>
+        <div class="module hover">
+          <div class="moduletext">
+            <h2>Hover Effect</h2>
+            <p>접근성을 고려하여 초점이동을 준수한 웹 표준 탭 메뉴를 완성하였습니다.</p>
+          </div>
+
+          <div class="hover_wrap">
+            <div class="hover7">
+              <figure class="front">
+                <img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/hover16.jpg" alt="이미지" />
+                <figcaption>
+                  <h3>Mouse Hover Effect05</h3>
+                  <p>마우스 오버 효과입니다.</p>
+                </figcaption>
+              </figure>
+              <figure class="back">
+                <img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/hover17.jpg" alt="이미지" />
+                <figcaption>
+                  <h3>Mouse Hover Effect05</h3>
+                  <p>마우스 오버 효과입니다.</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="hover8">
+              <figure class="front">
+                <img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/hover18.jpg" alt="이미지" />
+                <figcaption>
+                  <h3>Mouse Hover Effect06</h3>
+                  <p>마우스 오버 효과입니다.</p>
+                </figcaption>
+              </figure>
+              <figure class="back">
+                <img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/hover19.jpg" alt="이미지" />
+                <figcaption>
+                  <h3>Mouse Hover Effect06</h3>
+                  <p>마우스 오버 효과입니다.</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact-page" class="contact">
+      <div class="swiper2 contactSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"></div>
+          <div class="swiper-slide"></div>
+          <div class="swiper-slide"></div>
+          <div class="swiper-slide"></div>
+          <div class="swiper-slide"></div>
+        </div>
+      </div>
+
+      <div class="emailjs">
+        <h3>메일 보내기</h3>
+        <input class="name" type="text" name="name" placeholder="성함을 입력해주세요" />
+        <input class="email" type="text" name="email" placeholder="메일 주소를 입력해주세요" />
+        <input class="phone" type="text" name="phone" placeholder="연락처를 입력해주세요 (생략 가능)" />
+        <textarea class="message" name="message" rows="5" placeholder="내용을 입력해주세요 "></textarea>
+        <input class="button" type="button" name="submit" class="btn white" value="메일보내기" />
+      </div>
+    </section>
+
+    <!-- <div class="boxLoading"></div> -->
+  </body>
+</html>
